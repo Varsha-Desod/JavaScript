@@ -18,10 +18,9 @@
           console.log("the number is zero.");
         }*/
 
-
       //2. Even or Odd
       //Take a number as input and check whether it is even or odd.
-         /* let num=prompt("enter the number");
+      /* let num=prompt("enter the number");
           let remainder=num%2;
           if(remainder==0){
             console.log("the number is even");
@@ -30,27 +29,24 @@
 
           }*/
 
-
-       //3. Voting Eligibility
-       //Ask the user for their age and print whether they are eligible to vote (18 or above) or not.
-          /*let age= prompt("Enter your age");
+      //3. Voting Eligibility
+      //Ask the user for their age and print whether they are eligible to vote (18 or above) or not.
+      /*let age= prompt("Enter your age");
           if(age>=18){
             console.log("you are eligible to vote. Your age is :- "+age);
           }else{
             console.log("you are not eligible to vote. Your age is :- "+age);
           }*/
 
-
-        //4. Largest of Two Numbers
-        //Compare two numbers and print the greater number.
-       /* let a=10 , b=14;
+      //4. Largest of Two Numbers
+      //Compare two numbers and print the greater number.
+      /* let a=10 , b=14;
         if(a>b){
           console.log("a is grather than b");
         } else{
           console.log("b is grather than a");
 
         }*/
-
 
       //5. Grade Calculator
       //Take marks as input and print grades: 90–100 → A , 75–89 → B , 50–74 → C , Below 50 → Fail
@@ -65,17 +61,23 @@
         console.log("Your are Fail");
       }*/
 
-
-
       //6. Leap Year Checker
       //Check whether a given year is a leap year or not.
-      // let year=prompt("enter the year");
+      let year = prompt("Enter the year");
 
-
+      if (year % 400 === 0) {
+        console.log(year + " is a leap year");
+      } else if (year % 100 === 0) {
+        console.log(year + " is NOT a leap year");
+      } else if (year % 4 === 0) {
+        console.log(year + " is a leap year");
+      } else {
+        console.log(year + " is NOT a leap year");
+      }
 
       //7. Simple Calculator (switch case)
       //Take two numbers and an operator (+, -, *, /).Use switch-case to perform the calculation.
-       /*let a1 = 10;
+      /*let a1 = 10;
       let a2 = 20;
       let operator =prompt("Enter the operator like / , * , - , +") ;
       let result = 0;
@@ -100,7 +102,6 @@
           console.log("Invaild Operator");
       } */
 
-
       //8. Character Type Checker
       //Take a character input and check if it is: A vowel, A consonant, or Not a letter.
       /*let letter = prompt("Write Alphabate");
@@ -113,8 +114,6 @@
         console.log("Not a letter");
       }*/
 
-
-
       //9. Discount on Shopping
       //If shopping amount is: More than 500 → 20% discount. 200–500 → 10% discount Below 200 → No discount Print final price after discount.
       /* let price=prompt("Please enter your amount");
@@ -125,8 +124,6 @@
          }else{
           console.log("No discount for you. Your price is :- "+price);
          } */
-
-
 
       //10. Traffic Light Simulation
       //Take input as "red", "yellow", or "green". Display appropriate message: Red → Stop Yellow → Get Ready Green → Go
