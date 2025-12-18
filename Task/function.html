@@ -39,16 +39,127 @@
       //   }
       //   calculation();
 
+      // Write a function that takes a string and returns the number of vowels in it
+      // function vowels(str) {
+      //   let vowel="aeiou";
+      //   let count=0;
+      //   for (let i=0; i<str.length; i++){
+      //     if (vowel.includes(str[i])){
+      //       count++;
+      //     }
+      //   }
+      //   return count;
+      // }
 
-      // Write a function that takes a string and returns the number of vowels in it.
-      
+      // console.log(vowels("programming"));
+
+
       // Write a function that takes a list of numbers and returns the largest and smallest number.
+         function number() {
+          let arr
+         }    
+
+
       // Write a function that takes a number and returns its factorial using a loop.
+      // function factorials() {
+      //     let given_number=prompt("Enter the number");
+      //  let factorial=1;
+
+      //  for (i=1; i <= given_number; i++){
+      //   factorial *= i;
+      //  }
+      //  console.log("factorial of = " + factorial );
+      //  }
+
+      //  factorials();
+
       // Write a function that takes a string and checks if it is a palindrome or not.
-      // Write a function that takes a number and checks if it is prime.
+      // Write a function that  takes a number and checks if it is prime.
+      // function primenumber() {
+      // let n = parseInt(prompt("Enter the number"));
+      // for (let i = 1; i <= Math.sqrt(n); i++) {
+      // if (n % i === 0) {
+      //    console.log(n + " is a prime number");
+      //     }else {
+      //   console.log(n + " is not a prime number");
+      // }
+      //   }
+      // }
+
+      // primenumber();
+
+    //   let n = parseInt(prompt("enter the number"));
+    // for (let  i = 1; i * i <= n; i++) {
+    //   if (n % i == 0) {
+    //     console.log("prime");
+        
+    //   }else{
+    //     console.log("not prime");
+        
+    //   }
+//     // }
+//     let num=parseInt(prompt("enter the number"));
+//     function isPrime() {
+//     if (num <= 1) 
+//     return false; // Numbers less than or equal to 1 are not prime
+
+//     for (let i = 2; i < num; i++) {
+//         if (num % i === 0) {
+//             console.log("is not prime");
+//              // If num is divisible by any number other than 1 and itself
+//         }
+//     }
+//     console.log("is prime number");
+//      // If no divisors were found, num is a prime number
+// }
+//     isPrime();
+
       // Write a function that takes a list of numbers and returns a new list without duplicates.
+      let numbers = [1, 2, 3, 2, 4, 3, 5];
+let uniqueNumbers = [];
+
+for (let i = 0; i < numbers.length; i++) {
+    let found = false; 
+
+    for (let k = 0; k < uniqueNumbers.length; k++) {
+        if (numbers[i] === uniqueNumbers[k]) {
+            found = true; 
+            break; 
+        }
+    }
+
+    // If not found, add to uniqueNumbers
+    if (!found) {
+        uniqueNumbers.push(numbers[i]);
+    }
+}
+
+console.log(uniqueNumbers); 
+
+
       // Write a function that prints the Fibonacci series up to n terms.
+      // function Fibonacci() {
+      //   let n = 10;
+      //   let a = 0,
+      //     b = 1;
+      //   for (let i = 3; i <= n; i++) {
+      //     let next = a + b;
+      //     console.log(next);
+      //     a = b;
+      //     b = next;
+      //   }
+      // }
+      // Fibonacci();
       // Write a function that prints a pattern of stars (triangle) using loops.
+      // function patterns() {
+      //   let pattern = "";
+      // for (i = 0; i < 5; i++) {
+      //   pattern += "*";
+      //   console.log(pattern);
+      // }
+      // }
+
+      // patterns();
     </script>
   </body>
 </html>
